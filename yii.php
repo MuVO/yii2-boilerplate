@@ -9,4 +9,4 @@ if (!$conf = require(__DIR__ . '/app/conf/cli.php')) {
     throw new ErrorException("Application not configured");
 }
 
-(new \yii\web\Application($conf))->run();
+(new \yii\console\Application($conf))->run();
