@@ -1,0 +1,42 @@
+{
+  "name": "muvo/yii2-boilerplate",
+  "description": "An Yii2-based boilerplate",
+  "type": "project",
+  "developer": [
+    {
+      "name": "Vladislav O. Muschinskikh",
+      "email": "i@vlad.guru",
+      "role": "owner"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0",
+    "vlucas/phpdotenv": "*",
+    "yiisoft/yii2": "~2.0.13",
+    "yiisoft/yii2-bootstrap": "*",
+    "yiisoft/yii2-swiftmailer": "*",
+    "guzzlehttp/guzzle": "~6.0",
+    "ramsey/uuid": "*"
+  },
+  "config": {
+    "fxp-asset": {
+      "installer-paths": {
+        "npm-asset-library": "vendor/npm",
+        "bower-asset-library": "vendor/bower"
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "chmod -v 0777 app/runtime html/assets"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/",
+      "MuVO\\Yii2\\": "lib/"
+    }
+  }
+}
