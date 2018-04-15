@@ -8,7 +8,7 @@
             'targets' => [\yii\log\FileTarget::class],
         ],
         'urlManager' => [
-            'enablePrettyUrls' => true,
+            'enablePrettyUrl' => true,
         ],
     ],
     'params' => require(__DIR__ . '/params.php'),
