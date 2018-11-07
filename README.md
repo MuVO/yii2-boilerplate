@@ -7,11 +7,7 @@ Yii2 boilerplate
 2. [composer](https://getcomposer.org) installed
 
 # Installation
-1. Install *globally* `composer-asset-plugin`:
-	```bash
-	$ composer global require "fxp/composer-asset-plugin"
-	```
-2. Then run:
+1. Run:
 	```bash
 	$ composer create-project muvo/yii2-boilerplate
 	```
