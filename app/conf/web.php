@@ -13,7 +13,7 @@
             'targets' => [\yii\log\FileTarget::class],
         ],
         'urlManager' => [
-            'enablePrettyUrls' => true,
+            'enablePrettyUrl' => true,
             'showScriptName' => getenv('APP_ENVIRONMENT') !== 'prod',
         ],
     ],

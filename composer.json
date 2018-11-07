@@ -45,10 +45,10 @@
   },
   "scripts": {
     "post-create-project-cmd": [
-      "yii\\composer\\Installer::postCreateProject"
+      "yii\\composer\\Installer::postCreateProject",
+      "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
-      "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
       "yii\\composer\\Installer::postInstall"
     ]
   },
