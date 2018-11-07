@@ -5,7 +5,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 require_once __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
 
-if (!$conf = require(__DIR__ . '/../app/conf/cli.php')) {
+if (!$conf = require(__DIR__ . '/../app/conf/web.php')) {
     throw new ErrorException("Application not configured");
 }
 
