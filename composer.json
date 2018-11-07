@@ -46,6 +46,7 @@
   "scripts": {
     "post-create-project-cmd": [
       "yii\\composer\\Installer::postCreateProject",
+      "yii\\composer\\Installer::postInstall",
       "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-install-cmd": [
